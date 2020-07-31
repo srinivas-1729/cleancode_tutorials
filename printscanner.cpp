@@ -37,12 +37,12 @@ class printerscanner: IPrinter, IScanner { // Interface Segragation Principle
 
 void printmanager(IPrinter *p)
 {
-	
+	p->print();
 }
 
 void scanmanager(IScanner *s)
 {
-	
+	s->scan();
 }
 
 int main ()
